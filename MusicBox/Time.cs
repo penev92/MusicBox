@@ -10,6 +10,8 @@ namespace MusicBox
         Half = 2,
         Quarter = 4,
         Octa = 8,
-        Sixtheenth = 16
+        Sixtheenth = 16,
+        Thirtysecond = 32,
+        SixtyFourth = 64
     }
 }

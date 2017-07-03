@@ -2,7 +2,7 @@
 {
     public class F5SharpG5Flat : BaseNote
     {
-        public F5SharpG5Flat(Time time) : base(9, time)
+        public F5SharpG5Flat(Time time) : base("F5SharpG5Flat", time)
         {
         }
     }

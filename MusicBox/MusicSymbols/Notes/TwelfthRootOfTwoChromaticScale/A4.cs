@@ -2,6 +2,6 @@
 {
     public class A4 : BaseNote
     {
-        public A4(Time time) : base(0, time) { }
+        public A4(Time time) : base("A4", time) { }
     }
 }
