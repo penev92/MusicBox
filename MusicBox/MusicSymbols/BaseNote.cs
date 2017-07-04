@@ -11,9 +11,9 @@ namespace MusicBox.MusicSymbols
 
         public Time Time { get; set; }
 
-        public  BaseNote(string definition, Time time)
+        public BaseNote(string definition, Time time)
         {
-            FrequencyMultiplier = CalculateNote(definition);
+            FrequencyMultiplier = CalculateMultiplier(definition);
             Frequency = Math.Pow(2, FrequencyMultiplier / 12.0d) * 440.0d;
             Time = time;
         }
@@ -23,7 +23,7 @@ namespace MusicBox.MusicSymbols
             soundAdapter.Play(this, duration);
         }
 
-        private int CalculateNote(string noteName)
+        private int CalculateMultiplier(string noteName)
         {
             try
             {
@@ -70,7 +70,6 @@ namespace MusicBox.MusicSymbols
             int sign = GetSign(note, octave);
 
             int result;
-
             if (note == Octave.A || note == Octave.B)
             {
                 result = sign * ((12 * Math.Abs(4 - octaveNumeric)) + (sign * offset));

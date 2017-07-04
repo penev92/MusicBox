@@ -33,7 +33,7 @@ namespace MusicBox.Compositions
                 new BaseNote("C5", Time.Whole),
                 new BaseNote("B4", Time.Whole),
                 new BaseNote("B4Flat", Time.Whole),
-                new BaseNote("A4", Time.Whole),
+                new BaseNote("A4", Time.Whole)
             };
         }
     }
